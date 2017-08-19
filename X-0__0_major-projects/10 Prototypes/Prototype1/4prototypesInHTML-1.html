@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <style>
+            .editBox {
+                float: right;
+                background-color: blueviolet;
+                height: 36px;
+                width: 66px;
+                margin-right: 10px;
+                text-align: center;
+                border-radius: 10%;
+            }
+            .editButton {
+                line-height: 36px;
+                align-content: center;
+                text-align: center;
+                font-size: 90%;
+                
+                
+                }
+            
+			#flip-checkbox-1
+			{
+				width: 100%;
+			}
+            h2 {
+                font-size: 40px!important;
+                font-stretch: ultra-expanded;
+            }
+            .circle {
+                height: 20px;
+                width: 20px;
+                background-color: red;
+                border-radius: 50px;
+                float: left;
+                margin-top: 40px;
+                margin-right: 10px;
+            }
+            .tasks {
+                float: left;
+            }
+            .ui-li-aside >strong, p {
+                color: blue;
+                font-size: 25px;
+            }
+            .meridian {
+                color: blue;
+                font-size: 25px;
+                margin-top: 50px;
+            }
+            
+		</style>
+    </head>
+    <body>
+        <div data-role="page">
+            <div style="background-color: blue; color: white"data-role="header"><h1>July 31, 2017</h1><div class="editBox"><span class="editButton">Edit</span></div>
+	       <div role="main" class="ui-content">
+				<input type="text" placeholder="+Add Task"/>
+			</div>
+            
+            
+            <div>
+                <ul data-role="listview" data-inset="true">
+    <li><a href="index.html">
+    <div class="circle"></div><div class="tasks"><h2>Pick up the milk</h2>
+        <p><strong>Personal</strong></p></div>
+        
+    <p class="ui-li-aside"><strong>8:00</strong><span class="meridian">AM</span></p>
+    </a></li>
+                 
+                    
+                    
+    <li><a href="index.html">
+    <h2>jQuery Team</h2>
+    <p><strong>Boston Conference Planning</strong></p>
+    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+        <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+    </a></li>
+    <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+    <li><a href="index.html">
+    <h2>Avery Walker</h2>
+    <p><strong>Re: Dinner Tonight</strong></p>
+    <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
+        <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+    </a></li>
+</ul>
+            </div>
+  <form>          
+     <div class="ui-field-contain">
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+            <legend>Switch orientation</legend>
+            <input type="radio" name="radio-orientation" id="isVertical" value="isVertical" checked="checked">
+            <label for="isVertical">Incomplete</label>
+            <input type="radio" name="radio-orientation" id="isHorizontal" value="isHorizontal">
+            <label for="isHorizontal">Complete</label>
+        </fieldset>
+    </div>
+</form>
+            
+	       <div data-role="footer">
+					</div>
+        </div>
+    </body>
+</html>

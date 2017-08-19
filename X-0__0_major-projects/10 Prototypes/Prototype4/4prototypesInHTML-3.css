@@ -1,0 +1,29 @@
+html{
+    
+
+}
+#container0{
+    height: 640px;
+    display: flex;
+    border: 5px solid black;
+    
+}
+#child1{
+    width: 20%; 
+    border: 5px solid red;
+}
+#child2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 5px solid red;
+}
+#child2a{
+    height: 20%;
+    border: 5px solid orange;
+    
+}
+#child2b{
+    height: 80%;
+    border: 5px solid orange;
+}

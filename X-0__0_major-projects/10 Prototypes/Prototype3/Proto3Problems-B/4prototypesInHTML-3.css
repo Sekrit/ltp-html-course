@@ -1,0 +1,29 @@
+html{
+    
+
+}
+#parent{
+    height: 640px;
+    display: flex;
+    border: 5px solid black;
+    
+}
+#child1{
+    width: 20%; 
+    border: 5px solid red;
+}
+#child2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 5px solid red;
+}
+#child-of-child2-1{
+    height: 20%;
+    border: 5px solid orange;
+    
+}
+#child-of-child2-2{
+    height: 80%;
+    border: 5px solid orange;
+}

@@ -1,0 +1,94 @@
+html {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*border: 10px solid black;*/
+    margin-left: 1%;
+    padding: 10px;
+}
+img {
+    display: flex;
+    border: 5px solid transparent;
+    align-content: space-around;
+    height: 15%;
+    width: 15%;   
+}
+.mainContainer{
+    padding: 5px;
+    /*display: flex;*/
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+    /*border: 1px solid black;*/
+    margin-right: 5%;
+    margin-left: 2%:
+}
+.leftColumn{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    width: 15%;
+    margin-top 1%;
+    margin-right: 5%;
+    /*float: left;*/
+    padding-right: 1%;
+    border-right: 3px solid darkgray;
+    border-right-width: 50%;
+}
+.leftSubColumns{
+    /*border: 1px solid black;*/
+    height: 40%;
+}
+.leftSubColumnDropDownTree{
+    background-color: red;
+    width: 90%;
+    height: 30%;
+    border: 2px solid blue;
+    justify-content: center;
+    align-content: center;
+    /*align-content: center;*/
+}
+.dropDownTreeSpan{
+    font-size: 1.32em;
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.mainColumn{
+    /*display: flex;*/
+    flex-direction: column;
+    border: 1px solid black;
+    width: 70%;
+    float: right;
+    
+}
+.mainTopAd{
+    display:flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    /*border: 1px solid black;*/
+    height: 66%;
+    width: 100%;
+}
+.mainShowingResults{
+    display: flex;
+    /*border: 1px solid black;*/
+    height: 100%;
+    width: 88%;
+    border-bottom: 1px solid darkgray;
+    
+}
+.mainResultsSpan{
+    margin-top: 3%;
+    color: black;
+    font-size: .9em;
+    /*height: 33%;*/
+    
+}
+.mainSubColumns{sfs
+    /*border: 1px solid black;*/
+    /*height: 20%;*/
+    width: 70%;
+    border-bottom: 1px solid darkgray;
+    
+}

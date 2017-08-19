@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <Title>First Javascript</Title>
+        
+    </head>
+    <style>
+        #touchTarget {
+            background-color: #990000;
+            color: white;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+    </style>
+    
+    <script>
+    window.onload = function()
+    {
+    document.getElementById('touchTarget').addEventListener('click', respond);
+    }
+    function respond(e)
+    {
+        alert("You clicked me!");
+        alert("We will now remove the block which you have clicked... Thank You for your participation");
+        document.getElementById('touchTarget').style.display = "none";
+    }
+    
+    </script>
+    
+    <body>
+        <div id="touchTarget"><h1>Touch Me!<h1></h1></div>
+    
+    </body>
+</html>

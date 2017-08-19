@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Second Javascript</title>
+       
+        <script>
+            window.onload = function() {
+            document.getElementById('myButton0').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                alert("Thanks for clicking on the script-tags Click Me button");
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>The quick brown fox jumped over the lazy dogs</h1>
+        <button onclick="alert('Thanks for clicking');">"In-Line" Click Me</button>
+        <button id="myButton0">"Script Tags" Click Me</button>
+        <button id="myButton1">"Separate Java file" Click Me</button>
+    </body>
+    
+    <script src="javaScript1.2.js"></script>
+</html>
