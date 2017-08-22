@@ -2,22 +2,88 @@
 <html>
     <head>
         <title>Lab #5</title>
+        
+        <style>
+            table, tr, td, th {
+                border: 3px solid black;
+                border-collapse: collapse;    
+            }
+            table, .notes {
+                width: 80%;
+            }
+            td {
+                text-align: center;
+            }
+            tr:nth-child(even) {
+                background-color: lightgray;
+            }
+            tr:nth-child(odd) {
+                background-color: lightblue;
+            }
+            tr:nth-last-child(1) {
+                background-color: whitesmoke;
+            }
+            .logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        </style>
     </head>
     <body>
         <table>
-            <th>$</th> <th>Airline</th> <th>Departure Time</th> <th>Arrival Time</th> <th>Flight Length</th> <th>Amenities</th>
-            <td>$174</td> <td>JetBlue</td> <td>6:25 AM</td> <td>9:20 AM</td>        <td>2h 55m</td>               <td>W,T</td>
-            <td>$174</td> <td>JetBlue</td> <td>10:20 AM</td> <td>1:12 PM</td> <td>2h 52m</td> <td>W,T</td>
-            <td>$219</td> <td>JetBlue</td> <td>2:03 PM</td> <td>5:14 PM</td> <td>3h 11m</td> <td>W,T</td>
-            <td>$219</td> <td>JetBlue</td> <td>3:40 PM</td> <td>6:56 PM</td> <td>3h 16m</td> <td>W,T</td>
-            <td>$239</td> <td>JetBlue</td> <td>5:24 PM</td> <td>8:44 PM</td> <td>3h20m</td> <td>W,T</td>
-            <td>$239</td> <td>JetBlue</td> <td>10:14 PM</td> <td>1:17 AM</td> <td>3h 3m</td> <td>W,T</td>
-            <td>$179</td> <td>Delta</td>   <td>11:05 AM</td> <td>2:08 PM</td> <td>3h 3m</td> <td>W</td>
-            <td>$209</td> <td>Delta</td>   <td>1:35 PM</td> <td>4:41 PM</td> <td>3h 6m</td> <td>W</td>
-            <td>$239</td> <td>Delta</td>   <td>3:29 PM</td> <td>6:42 PM</td> <td>3h 13m</td> <td>W, P</td>
-            <td>$209</td> <td>Delta</td>   <td>7:30 PM</td> <td>10:52 PM</td> <td>3h 22m</td> <td>W</td>
-
+            <caption>NY (JFK) - Fort Lauderdale</caption>
             
+        <tr><th width="2%">$</th>    <th width="2%">Airline</th> <th width="3%">Departure Time</th> <th width="3%">Arrival Time</th> <th width="3%">Flight Length</th> <th width="3%">Amenities</th></tr>
+            
+        <tr><td>$174</td> <td rowspan="6"><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td> <td>6:25 AM</td>         <td>9:20 AM</td>        <td>2h 55m</td>         <td>W,T</td></tr>
+            
+        <tr><td>$174</td> <!--<td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td>--> <td>10:20 AM</td>        <td>1:12 PM</td>        <td>2h 52m</td>         <td>W,T</td></tr>
+            
+        <tr><td>$219</td> <!--<td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td>--> <td>2:03 PM</td>         <td>5:14 PM</td>        <td>3h 11m</td>         <td>W,T</td></tr>
+            
+        <tr><td>$219</td> <!--<td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td>--> <td>3:40 PM</td>         <td>6:56 PM</td>        <td>3h 16m</td>         <td>W,T</td></tr>
+            
+        <tr><td>$239</td> <!--<td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td>--> <td>5:24 PM</td>         <td>8:44 PM</td>        <td>3h 20m</td>         <td>W,T</td></tr>
+            
+        <tr><td>$239</td> <!--<td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td>--> <td>10:14 PM</td>        <td>1:17 AM</td>        <td>3h 3m</td>          <td>W,T</td></tr>
+            
+        <tr><td>$179</td> <td rowspan="4"><a href="http://delta.com/" target="_blank"><img src="../../images-audio-other/publicMedia/airlines/Delta-DL.png" alt="Delta logo" class="logo"/></a></td>   <td>11:05 AM</td>        <td>2:08 PM</td>        <td>3h 3m</td>          <td>W</td></tr>
+            
+        <tr><td>$209</td> <!--<td><a href="http://delta.com/" target="_blank"><img src="../../images-audio-other/publicMedia/airlines/Delta-DL.png" alt="Delta logo" class="logo"/></a></td>-->   <td>1:35 PM</td>         <td>4:41 PM</td>        <td>3h 6m</td>          <td>W</td></tr>
+            
+        <tr><td>$239</td> <!--<td><a href="http://delta.com/" target="_blank"><img src="../../images-audio-other/publicMedia/airlines/Delta-DL.png" alt="Delta logo" class="logo"/></a></td>-->   <td>3:29 PM</td>         <td>6:42 PM</td>        <td>3h 13m</td>         <td>W, P</td></tr>
+            
+        <tr><td>$209</td> <!--<td><a href="http://delta.com/" target="_blank"><img src="../../images-audio-other/publicMedia/airlines/Delta-DL.png" alt="Delta logo" class="logo"/></a></td>-->   <td>7:30 PM</td>         <td>10:52 PM</td>       <td>3h 22m</td>         <td>W</td></tr>
+            
+
+        <tr><td colspan="6" style="background-color: lightgray;">Amenities: <strong>W</strong>ifi, Live <strong>T</strong>elevision, In-Seat <strong>P</strong>ower</td></tr>
         </table>
+        
+            <h3 class="notes">****Notes:<br>
+                1.) I'm not sure why, but I can't get the ammenities background to go white with an nth-last-child rule<br>
+                2.) Attempting to share test through Google Drive:<br>
+                    -a.)A number of mobile devices show as html<br>
+                    -b.) company logos not showing(share problem?)
+            </h3>
+            <h2>Testing table below</h2>
+        
+        <br>
+        <table>
+        <caption style="background-color: yellow;">Table Testing</caption>
+            
+        <tr><th width="3%">$</th>    <th width="10%">Airline</th> <th width="3%">Departure Time</th> <th width="3%">Arrival Time</th> <th width="3%">Flight Length</th> <th width="3%">Amenities</th></tr>
+            
+        <tr><td>$174</td> <td><a href="http://jetblue.com/"0 target="_blank"><img class="logo" src="../../images-audio-other/publicMedia/airlines/jetBlue-B6.png" alt="jetblue logo"/></a></td> <td>6:25 AM</td>         <td>9:20 AM</td>        <td>2h 55m</td>         <td>W,T</td></tr> 
+            
+            
+        <tr><td>$179</td> <td><a href="http://delta.com/" target="_blank"><img src="../../images-audio-other/publicMedia/airlines/Delta-DL.png" alt="Delta logo" class="logo"/></a></td>   <td>11:05 AM</td>        <td>2:08 PM</td>        <td>3h 3m</td>          <td>W</td></tr>
+            
+        <tr><td colspan="6" style="text-align: center; background-color: yellow; ">Table Testing</td></tr>
+        
+        
+        </table>
+        
     </body>
 </html>

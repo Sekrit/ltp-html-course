@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fieldset Arrangement</title>
+        <style>
+      
+            fieldset { display: block; }
+        </style>
+    
+    </head>
+    <body>
+        
+        <form action="#" method="post">
+        <fieldset><legend>Personal Data</legend>    
+            <label for="first">First</label>
+            <input type="text" id="first" name="first" required="required"/>
+            <label for="last">last</label>
+            <input type="text" id="last" name="last" required="required"/>
+            <label for="email">email</label>
+            <input type="email" name="email" name="email" required="required"/>
+            
+            <input type="phone" id="phone" placeholder="Phone Number" required="required"/>
+            <br>
+            <br>
+            <label for="bio">Biography</label><br>
+            <textarea id="bio" cols="60">Type your biography here.</textarea><br>
+            <br>
+        </fieldset>
+        <fieldset><legend>Bands</legend>
+            <input id="bands" placeholder="Artist Drop Down List" list="myBands"/>
+                <datalist id="myBands">
+                    <option value="Radiohead"/>
+                    <option value="Jay-Z"/>
+                    <option value="Primus"/>
+                    <option value="Method Man"/>
+                    <option value="Tim McGraw"/>
+                    <option value="Soundgarden"/>
+                </datalist><br/>
+            <label id="bands2">Bands You Like</label><br> 
+            <input type="checkbox" name="bands2" value="Radiohead"/>Radiohead<br>
+            <input type="checkbox" name="bands2" value="Jay-Z"/>Jay-Z<br>
+            <input type="checkbox" name="bands2" value="Primus"/>Primus<br>
+            <input type="checkbox" name="bands2" value="Method Man"/>Method Man<br>
+            <input type="checkbox" name="bands2" value="Tim McGraw"/>Tim McGraw<br>
+            <input type="checkbox" name="bands2" value="Soundgarden"/>Soundgarden<br>
+            <br>
+        </fieldset>
+        <fieldset><legend>Gender</legend>
+            <label id="gender">Gender</label><br/>
+            <input type="radio" name="gender" value="male">Male<br/>
+            <input type="radio" name="gender" value="female">Female<br/>
+            <input type="radio" name="gender" value="other">Other<br/>
+            <br>
+            <label id="state">Which State of residence?<br/><em>(If residing in multiple states select 'control' while clicking)</em></label>
+            <br/>
+        </fieldset>
+        <fieldset><legend>States</legend>
+            <select id="state" name="state" size="4" multiple="multiple">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Florida">Florida</option>
+                <option value="Illinois">Illinois</option>
+            </select>
+            <br>
+        </fieldset><legend>HOW DO I ALIGN BUTTONS "CENTER"?!?! Does a fieldset function as a container/wrapper, or is it just some kind of "preset-border"?</legend>
+        <fieldset style="display: table; margin: auto; alignment: center; ">
+            <button type="submit">Send Form</button><button type="reset">Reset/Clear form</button>
+        </fieldset>
+        </form>
+        
+    </body>
+</html>
