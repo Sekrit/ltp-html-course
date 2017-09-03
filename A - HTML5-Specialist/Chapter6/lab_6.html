@@ -3,6 +3,9 @@
     <head>
         <title>Lab #6</title>
         <style>
+            html {
+                line-height: 20px;
+            }
             #submit {
                 align-content : center;
             }
@@ -13,13 +16,37 @@
                 width: 100%; 
             }
             td {
+                font-size: 1.2em;
                 width: 25%;
                 text-align: center;
             }
             td>label {
                 text-align: left;
             }
-        
+            
+            input, span {
+                font-family: Times;
+                font-size: 1.2em;
+                margin-left: 120px;
+            }
+            legend {
+                font-style: italic;
+                font-size: 1.2em;
+            }
+            .yesNoContainer{
+                width: 10%;
+                font-size: .8em;
+                margin: 0px;
+                padding: 0px;
+                border: 1px solid transparent;
+                text-align: left;
+                text-align: center;
+            }   
+            .doYouHave {
+                font-family: Times;
+                font-size: .9em;
+                margin-left; 5px;
+            }
         </style>
     </head>
     <body>
@@ -27,9 +54,9 @@
         <form action="#" method="post" style="font-size: 12pt;">
             
             <fieldset><legend>Identification</legend>
-                <input type="text" name="firstName" placeholder="First name" maxlength="20" required="required"/>
-                 <input type="text" name="lastName" placeholder="Last name" maxlength="20" required="required"/>
-                <input type="tel" name="lastName" placeholder="Telephone Number" maxlength="20" required="required"/>
+                <input type="text" name="firstName" placeholder="First name" maxlength="20" required="required" style="width: 22%;"/>
+                 <input type="text" name="lastName" placeholder="Last name" maxlength="20" required="required" style="width: 22%;"/>
+                <input type="tel" name="lastName" placeholder="Telephone Number" maxlength="20" required="required" style="width: 22%;"/>
                 <br>
                 <p>Although dental personnel primarily treat the area in and around your mouth.  The mouth is still an area of the entirety of the body.  Health problems that you may have, or medication which you may be taking, could have an importaint interrelationship with the ddientistry you will receive.  Thank you for answering the following questions.
                 </p>
@@ -37,19 +64,22 @@
             <fieldset>
                 <table>
                     <tr>
-                        <td style="width: 30%"><label for="underCare">Are your under a physician's care now?</label></td>
-                        <td style="width: 30%"><input type="radio" id="underCare" name="underCare" value="yes">Yes <input type="radio" id="underCare" name="underCare" value="no">No</td>
-                        <td style="width: 30%"><input type="text" for="underCare" placeholder="If yes, please explain"> </td>
+                        <td style="width: 35%"><label for="underCare">Are your under a physician's care now?</label></td>
+                        <td class="yesNoContainer"><input type="radio" id="underCare" name="underCare" value="yes">Yes </td>
+                        <td class="yesNoContainer"><input type="radio" id="underCare" name="underCare" value="no">No</td>
+                        <td style="width: 52%"><input type="text" for="underCare" placeholder="If yes, please explain..." > </td>
                     </tr>
                     <tr>
-                         <td><label for="majorOperation">Have you ever been hospitalized or had a major operation</label></td>
-                         <td><input type="radio" id="majorOperation" name="majorOperation" value="yes">Yes <input type="radio" id="majorOperation" name="majorOperation" value="no">No</td>
-                         <td><input type="text" for="underCare" placeholder="If yes, please explain"> </td>
+                         <td style="width: 35%"><label for="majorOperation">Have you ever been hospitalized or had a major operation</label></td>
+                         <td class="yesNoContainer"><input type="radio" id="majorOperation" name="majorOperation" value="yes">Yes</td>
+                         <td class="yesNoContainer"><input type="radio" id="majorOperation" name="majorOperation" value="no">No</td>
+                         <td style="width: 52%"><input type="text" for="underCare" placeholder="If yes, please explain..."> </td>
                     </tr>
                     <tr>
-                        <td><label for="headNeckInjury">Have you ever had a serious head or neck injury?</label></td>
-                        <td><input type="radio" id="headNeckInjury" name="headNeckInjury" value="yes">Yes <input type="radio" id="headNeckInjury" name="headNeckInjury" value="no">No</td>
-                        <td><input type="text" id="headNeckInjury" for="headNeckInjury" placeholder="If yes, please explain"> </td>
+                        <td style="width: 35%"><label for="headNeckInjury">Have you ever had a serious head or neck injury?</label></td>
+                        <td class="yesNoContainer"><input type="radio" id="headNeckInjury" name="headNeckInjury" value="yes">Yes</td>
+                        <td class="yesNoContainer"><input type="radio" id="headNeckInjury" name="headNeckInjury" value="no">No</td>
+                        <td style="width: 52%"><input type="text" id="headNeckInjury" for="headNeckInjury" placeholder="If yes, please explain..."> </td>
                     </tr>
                     
                     
@@ -60,352 +90,361 @@
             <fieldset><legend>Women: Are you</legend>
                 <span>Pregnant/Trying to get pregnant?
                             <input type="radio" name="pregYes" id="pregYes"><label for="pregYes">Yes</label>
-                            <input type="radio" name="pregNo" id="pregNo"><label for="pregYes">No</label>
-                 Taking oral contraceptives?
+                            <input type="radio" name="pregNo" id="pregNo"><label for="pregYes">No</label></span>
+                <span>Taking oral contraceptives?
                             <input type="radio" name="contraceptiveYes" id="contraceptiveYes"><label for="contraceptiveYes">Yes</label>
-                            <input type="radio" name="contraceptiveNo" id="contraceptiveNo"><label for="contraceptiveNo">No</label>
-                 Nursing?
+                <input type="radio" name="contraceptiveNo" id="contraceptiveNo"><label for="contraceptiveNo">No</label></span>
+                <span>Nursing?
                             <input type="radio" name="nursingYes" id="nursingYes"><label for="nursingYes">Yes</label>
                      <input type="radio" name="nursingNo" id="nursingNo"><label for="nursingNo">No</label><br></span>
 
             </fieldset>
             
             <fieldset><legend>Are you allergic to any of the following?</legend>
-                <input type="checkbox" name="allergies" value="Aspirin"/>Aspirin
-                <input type="checkbox" name="allergies" value="penicillin"/>Penicillin
-                <input type="checkbox" name="allergies" value="codeine"/>Codeine
-                <input type="checkbox" name="allergies" value="locAnestetics"/>Local Anesthetics
-                <input type="checkbox" name="allergies" value="acryllic"/>Acryllic
-                <input type="checkbox" name="allergies" value="metal"/>Metal
-                <input type="checkbox" name="allergies" value="latex"/>Latex
-                <input type="checkbox" name="allergies" value="sulfa"/>Sulfa Drugs<br>    
-                <input type="checkbox" name="allergies" value="Other"/>other
-                <textarea cols="120" rows="3" placeholder="If you selected 'other' please explain."></textarea>
+                <span><input type="checkbox" name="allergies" value="Aspirin"/>Aspirin</span>
+                <span><input type="checkbox" name="allergies" value="penicillin"/>Penicillin</span>
+                <span><input type="checkbox" name="allergies" value="codeine"/>Codeine</span>
+                <span><input type="checkbox" name="allergies" value="locAnestetics"/>Local Anesthetics</span>
+                <span><input type="checkbox" name="allergies" value="acryllic"/>Acryllic</span>
+                <span><input type="checkbox" name="allergies" value="metal"/>Metal</span>
+                <span><input type="checkbox" name="allergies" value="latex"/>Latex</span>
+                <span><input type="checkbox" name="allergies" value="sulfa"/>Sulfa Drugs</span>
+                <span><input type="checkbox" name="allergies" value="Other"/>other</span><br>
+                <span><textarea cols="120" rows="3" placeholder="If you selected 'other' please explain."></textarea>
             </fieldset>
             
-            <fieldset style="width: 70%"><legend>Do you have <em>(or, have your ever had)</em> any of the following?</legend>
-                <table>
+            <fieldset style="width: 99%"><legend>Do you have <em>(or, have your ever had)</em> any of the following?</legend>
+                <table style="width:100%; ">
                     <tr>
-                        <td style="border-right: 2px solid black">
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                   <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                        </td>
-                           <td style="border-right: 2px solid black">
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                        </td>
-                           <td style="border-right: 2px solid black">
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
+                        
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                     <tr>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                             
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>
                         
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                        </td>
-                           <td>
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                            
-                            <p>AIDS/HIV
-                            <input type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
-                            <input type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></p>
-                        
-                        </td>
+                            <td class="doYouHave" style="border-left: 2px solid black; margin: 10px;">AIDS/HIV
+                            <input class="doYouHave" type="radio" name="aidsYes" id="aids"><label for="aidsYes">Yes</label>
+                            <input class="doYouHave" type="radio" name="aidsNo" id="aids"><label for="aidsYes">No</label><br></td>         
+                    </tr> 
+                  
                     
-                            
-                           
-                    </tr>     
+                    
                 </table>
             </fieldset>
             
-            <textarea cols="100" placeholder="Please add any additional comments about the patient or their circumstances here."></textarea>
+            <textarea cols="200" rows="4" style="margin-bottom: 2%;" placeholder="Please add any additional comments about the patient or their circumstances here."></textarea>
         
         <fieldset><legend>Acknowledgment</legend>
             <p>By submitting this form, your are acknowledging that to the best of your knowledge, the questions on this form have been accurately answered.  And, you acknowledge that you understand that providing incorrect information can be dangerous to your (or the patient's) health.  It is your responsibility to inform the dental office of any changes in medical status.</p>
