@@ -15,8 +15,10 @@ document.getElementById("findNameBtn").addEventListener("click", lookForName);
                     timesFound.push(text[j]);
                     } if (timesFound.length === 0) {
                     alert("Your name wasn't found!");
+                    console.log("should show that name wasn't found.");
                         } else {
                         alert(timesFound);
-                }
+                        console.log("Success, should show how many times it was found.");
+                    }
             }
         }        
