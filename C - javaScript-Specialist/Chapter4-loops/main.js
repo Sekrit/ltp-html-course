@@ -9,9 +9,9 @@ document.getElementById("findNameBtn").addEventListener("click", lookForName);
         
         }
         
-        for (var i = 0, i < text.length; i++) {
-            if (text[i] === "j") {
-                for (var J = i; j < (myName.length + i); j++) {
+        for (var i = 0; i < (text.length; i++) {
+            if (text[i] === "J") {
+                for (var j = i; j < (myName.length + i); j++) {
                     timesFound.push(text[j]);
                     } if (timesFound.length === 0) {
                     alert("Your name wasn't found!");
