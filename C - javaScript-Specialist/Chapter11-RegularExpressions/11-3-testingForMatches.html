@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Testing for Matches</title>
+        <script>
+            //Parentheses are being used for multiple expressions
+            
+            //The pipe " | " symbol is separating the deperate expressions much as a comma would in a standard comma in a regular sentence would for a list of items.
+            
+            //FOR NUMBERS surround them with square brackets " [ ] ".
+            
+            //For NOT statements, otherwise reverse the expression us a " ^ " prior to the expression.  For example:  /^(.tv | .com)/; will have the pattern mean anything other than ".tv" or ".com".
+            
+            var pattern = /(.tv | .com | .org)/;
+                //pattern.test runs a test for boolean true or false states.  Meaning that if the characters are found in the alert string which are in the expression, it will be true.  Otherwise, it will be false.
+                alert(pattern.test("LearnToProgram.tv"));
+            
+            
+        
+        
+        </script>
+    </head>
+    
+    <body>
+    
+    
+    </body>
+</html>

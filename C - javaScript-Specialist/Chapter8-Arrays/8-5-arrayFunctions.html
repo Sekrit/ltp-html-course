@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Array Functions</title>
+        <script>
+
+            var years = [1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008];
+            
+            window.onload=function()
+            {
+                years.forEach(myFunction)
+                
+                document.getElementById("sendNewYear").addEventListener('click', addThisYearToArray);
+                
+                
+            }
+            
+            
+            function addThisYearToArray()
+            {
+                alert("You have added a year to the array.");
+                item=document.getElementById("addThisFromForm").value;
+                
+                index=years.length;
+                years.push(document.getElementById("addThisFromForm").value);
+                console.log(years);
+               
+                
+                myFunction(item, index);
+                
+            }
+            
+            
+            function myFunction(item, index)
+            {
+                document.getElementById("result").innerHTML += index + " .) " + item + "<br/>";
+            }
+        
+        </script>
+    
+    </head>
+    <body>
+        <input type="number" id="addThisFromForm" />
+        <button id="sendNewYear">Which Year Would you like to add?</button>
+       
+        <div id="result"></div>
+    </body>
+
+</html>

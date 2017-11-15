@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Anonymous Functions</title>
+        
+        
+        <script>
+            var btnPress;
+            
+            window.onload = function(){
+                
+                alert("window.onload!");/*pop-up*/
+                
+                btnPress = document.getElementById("myButton"); /* load button presence, so that javascript is aware of it within script */
+                
+                
+                
+/*Below are a click and "hover over" function for mouse usage.*/
+                btnPress.onclick = function(){
+                    alert("Thanks for pressing me!");
+                }
+                
+                btnPress.onmouseout = function(){
+                    alert("You hovered over the button...")
+                }
+                
+                
+            }
+        
+        </script>
+    </head>
+    
+    <body>
+        <div id="result"></div>
+        <button id="myButton">Press Me!</button>
+    
+    </body>
+</html>

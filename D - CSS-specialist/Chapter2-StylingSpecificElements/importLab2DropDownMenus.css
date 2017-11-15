@@ -1,0 +1,22 @@
+#dropDownMenu {
+    background: rgba(115, 30, 200, 0.5);
+    padding-left: 350px;
+    
+}
+
+#dropDownMenu .actualDropDown ul{
+    display: none;
+    position: fixed;
+    background: rgba(115, 30, 200, 0.29);
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: aqua;
+    margin-top: 0px;
+    padding: 5px 5px 5px 1px;
+    text-align: left;
+    list-style-type: none; 
+}
+
+#dropDownMenu .actualDropDown:hover ul{
+    display: block;
+}

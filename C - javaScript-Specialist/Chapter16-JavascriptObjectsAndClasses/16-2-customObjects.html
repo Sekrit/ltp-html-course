@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>16-2 Custom Objects</title>
+        <script>
+            
+       //CREATING Team object 
+            
+            
+            var team = new Object();
+            team.name = "Bad News Bears";
+            team.wins = 100;
+            team.losses= 25;
+            team.captain = "Derek Jeter";
+            
+            window.onload = function()
+            {
+                document.getElementById("result1").innerHTML = "<h1>" + team.name + "</h1>"; 
+                document.getElementById("result1").innerHTML += "<h1>" + team.wins + "</h1>";
+            }
+            
+        
+        //CREATING Employee object
+            
+            function employee(ssn, name, salary)
+            {
+                this.socialNumber = ssn;
+                this.fullName = name;
+                this.pay = salary;
+            }
+        
+        </script>
+    </head>
+    
+    <body>
+    <div id="result1"></div>
+        
+    <script>
+        var mark = new employee("000-00-000", "Mark Lassoff", 500);    
+        var bob = new employee("000-00-000", "Bob Burgers", 250);  
+        
+        alert(mark.fullName);
+        alert(bob.fullName);
+        
+    </script>
+    
+    </body>
+</html>

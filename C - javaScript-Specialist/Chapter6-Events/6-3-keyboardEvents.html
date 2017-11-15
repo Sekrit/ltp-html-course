@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Keyboard Events</title>
+        <script>
+            window.onload = function(){
+                var myText = document.getElementById("myText");
+                myText.onkeypress = function(e){
+                  console.log(e);  
+                }
+            }
+            
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <label for="myText">Type Here!</label>
+        <input type="text" id="myText" />
+        
+    </body>
+</html>

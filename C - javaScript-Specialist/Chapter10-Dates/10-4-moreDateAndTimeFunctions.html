@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Date</title>
+        <script>
+        window.onload=function()
+        {
+            //Current Date
+            var d = new Date();
+            d.setFullYear(2020);
+            d.setHours(18);
+           // alert(d.getFullYear());
+            //alert(d);
+            document.getElementById("result").innerHTML = d + "<br/>" + document.getElementById("result").innerHTML + d.toJSON();
+            //document.getElementById("result").innerHTML + d.toJSON();
+        }
+        
+        
+        </script>
+    </head>
+    
+    <body>
+        <div id="result"></div>
+    
+    </body>
+</html>

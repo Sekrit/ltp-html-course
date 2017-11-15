@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>15-3 Geolocation</title>
+        <style>
+        
+        </style>
+        <script>
+        window.onload = function()
+        {
+            options = { enabeHighAccuracy: false, timeout: 5000, MaximumAage: 1000};
+            //navigator.geolocation.getCurrentPosition(success, fail);
+            watch = navigator.geolocation.watchPosition(success, fail, options);
+            options = { enabeHighAccuracy: false, timeout: 5000, MaximumAage: 1000};
+            document.getElementById('btnStopTrack').addEventListener('click', stopWatch, options);
+        }
+        function success(position)
+        {
+            console.log(position);
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            document.getElementById('lat').innerHTML = lat;
+            document.getElementById('long').innerHTML = long;
+        }
+        
+        function stopWatch(event)
+            {
+                navigator.geolocation.clearWatch(watch);
+            }
+            
+        function fail(e)
+            {
+                alert(e.message);
+            }
+        
+        
+        </script>
+    </head>
+    
+    <body>
+        <p>Latitude: <output id="lat"></output></p>
+        <p>Longitude: <output id="long"></output></p>
+        <button id="btnStopTrack">Stop Tracking Me!</button>
+    
+    </body>
+</html>

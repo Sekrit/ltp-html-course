@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+            window.onload = function() {
+            var btn = document.getElementById("btn");
+            var number = /*document.getElementById("inputNumber").value;*/
+            
+                function alertUser() {
+                    alert(inputNumber);
+                    }
+                
+                btn.onclick = function() {
+                   var number = document.getElementById("inputNumber").value;
+                    console.log(number)
+                    /*alertUser(number); This was not defined.  What would you like it to do?*/
+                    }
+                
+                }
+        </script>
+    </head>
+    
+    <body>
+        <input type="number" id="inputNumber" /> <!--changed type to number, as text seemed inappropriate for how I perceived the intention -->
+        <button id="btn">Alert</button>
+    </body>
+</html>

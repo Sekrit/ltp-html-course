@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions</title>
+        <script>
+            
+        function greeting() {
+        var resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = "<h1>Greetings!</h1>";
+}
+        function jayAddOn() {
+        var jayTrial = document.getElementById('jayAudible');
+            jayTrial.innerHTML = "<h2>Jay added to this script to allow for an onload message.</h2>";
+        }
+
+window.onload = function()
+{
+    //greeting();
+    jayAddOn();
+}
+
+        </script>
+    </head>
+    
+    
+    <body>
+        <div id="result"></div><br />
+        <div id="jayAudible"></div><br />
+        <button onclick="greeting()">Greet Me!</button>
+    </body>
+    
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>13-4 Making Post Requests</title>
+    <script>
+    var xmlhttp;
+        
+    window.onload=function()
+    {
+        xmlhttp = new XMLHttpRequest();
+        var url = "https://makemeapassword.org/api/v1/passphrase/plain?pc=1&wc=3&sp=n";
+        xmlhttp.onreadystatechange = process;
+        console.log(url);
+        
+        xmlhttp.open("POST", url, true);
+        xmlhttp.setRequestHeader("wc", "1");
+        xmlhttp.setRequestHeader("pc", "1");
+        xmlhttp.setRequestHeader("sp", "n")
+        xmlhttp.send();
+   
+    }
+     
+    function process()
+    {
+        //alert(xmlhttp.readyState);
+        if(xml.readyState==4 && xmlhttp.status==200)
+            {
+                alert(xmlhttp.responseText);
+            }
+    }
+        
+    </script>
+</head>
+    
+<body>
+    
+    
+</body>
+    
+    what the fuck was supposed to happen in this assignment?  Why are the request headers starting in the wrong order (for example, "wc" occuring before "1" instead of the order in the URL)???  
+    
+    Additionally I am not oriented to that plug-in, and this site is not working for me...  How on earth is this a reasonable example?  
+    
+    I haven't learned anything which I may apply from this lesson.
+</html>
+

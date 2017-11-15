@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Looping Through Arrays </title>
+        <script>
+            // ---  Initial car "WHILE LOOP" Array ---
+            window.onload=function()
+            {
+                cars = ["Cougar", "Jeep", "Audi", "BMW", "Ford", "Toyota", "Honda"];  
+                var cities = ["Miami", "New York", "Boston", "Chicago", "New Orleans", "Austin"];
+                //console.log(cars.length);
+                var ticks = cars.length;
+                var xInstanceCars = 0;
+                var outputCars = "";
+                var outputCities = "";
+                while(xInstanceCars < ticks)
+                    {
+                        outputCars += cars[xInstanceCars];
+                        outputCars += "<br/>";
+                        console.log(xInstanceCars);
+                        xInstanceCars++;
+                    }
+                 for(var xInstanceCities=0; xInstanceCities < cities.length; xInstanceCities++)
+                {
+                    outputCities += cities[xInstanceCities];
+                    outputCities += "<br/>";
+                }
+                
+                document.getElementById("result").innerHTML = outputCars
+                
+                document.getElementById("result").innerHTML +=outputCities;
+            } 
+            //  --- End of Car Loop Array ---
+           
+            
+/* The Below script was initially written outside of the "window.onload" function, as it was not really easy to see what was going on in the video screen regarding script nesting.  After failed testing, I decided to go back and move the script inside of the "window.onload", as I assumed that the "Cars" array displayed properly, and figured that the scope of the "for" function should be moved to where the "while" function was.
+
+            
+            //   --- Beginning of secondary "FOR LOOP" Array for cities ---
+            
+            /* var cities = ["Miami", "New York", "Boston", "Chicago", "New Orleans", "Austin"]; 
+            
+            var outputCities = "";
+            
+            for(var xInstanceCities=0; xInstanceCities < cities.length; xInstanceCities++)
+                {
+                    outputCities += cities[xInstanceCities];
+                    outputCities += "<br/>";
+                }
+            document.getElementById("result").innerHTML +=outputCities; */
+            
+            
+        
+        
+        </script>
+    
+    </head>
+    <body>
+        <div id="result"></div>
+    
+    </body>
+
+</html>

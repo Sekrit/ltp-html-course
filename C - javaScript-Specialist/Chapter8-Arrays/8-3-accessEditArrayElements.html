@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Accessing and Editing Arrays</title>
+        <script>
+            window.onload=function()
+            {
+                teams = ["Yankees", "Mets", "Giants", "Jets", "Knicks", "Nets", "Rangers", "Islanders"];
+                console.log(teams);
+                
+                computers = new Array("Compaq", "Mackintosh", "TI994A", "TRS-80", "Apple ][", "Commodore 64", "Osborn Pro");
+                console.log(computers);
+                
+                family = [];
+                
+                document.getElementById('result').innerHTML = computers[3];
+                document.getElementById('result').innerHTML += "<br />" + teams[5];
+                
+            }
+        
+        
+        </script>
+    
+    </head>
+    <body>
+        <div id="result"></div>
+    
+    </body>
+
+</html>

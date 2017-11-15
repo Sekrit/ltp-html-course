@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>12-4 Adding and Deleting Elements</title>
+        <script>
+        window.onload=function()
+        {
+            
+            var theList = document.getElementById('myList');
+            var elementNode = document.createElement("LI");
+            var textNode = document.createTextNode("Yes");
+            elementNode.appendChild(textNode);
+            theList.appendChild(elementNode);
+            
+            //add another list item with text-
+            var elementNode2 = document.createElement("LI");
+            var textNode2 = document.createTextNode("Dynamic addition 1");
+            elementNode2.appendChild(textNode2);
+            theList.appendChild(elementNode2);
+            
+             //add another list item with text-
+            var elementNode3 = document.createElement("LI");
+            var textNode3 = document.createTextNode("Dynamic Addition 2");
+            elementNode3.appendChild(textNode3);
+            theList.appendChild(elementNode3);
+            
+            
+            //Remove Nodes Dynamically
+            theList.removeChild(theList.childNodes[1]);
+            
+           
+            /*
+           // ATTEMPTING to write out "long-form" without using variables... I am attempting this so that I can develop a strongersense of addressing and functioning.......   
+           document.getElementById('myList').document.createElement("LI").appendChild(document.createTextNode("Yes"))
+            
+            */
+                
+            
+            
+        }
+        
+        
+        </script>
+    </head>
+    
+    <body>
+        
+        <ul id="myList">
+            <li>Journey</li>
+            <li>REO Speedwagon</li>
+        
+        </ul>
+    
+    </body>
+</html>

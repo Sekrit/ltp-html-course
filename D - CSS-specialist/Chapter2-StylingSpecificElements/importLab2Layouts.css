@@ -1,0 +1,9 @@
+body {
+    background-image: url("http://media.gettyimages.com/photos/metal-textured-background-picture-id529670238");
+    background-repeat: no-repeat;
+    //filter: invert(100%);
+}
+
+ul li.squareBullets{
+    list-style-type: square;
+}

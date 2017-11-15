@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>16-3 Fruit Consumer</title>
+    <script src="Fruit.js"></script>
+    <script>
+        
+        window.onload=function()
+        {
+            //var apple = new Fruit("Apple", "red", 500);
+            
+            var pear = new Fruit("Pear", "green", 600);
+            document.getElementById("btnBite").addEventListener('click', bite);
+            
+            function bite() {
+                document.getElementById("result1").innerHTML = "Bite taken." + pear.name + "Now weighs: " + pear.takeABite();
+            }
+            
+        }
+       
+        
+    </script>
+</head>
+    
+<body>
+    <div id="result1"></div>
+    <button id="btnBite">Bite</button>
+</body>
+</html>

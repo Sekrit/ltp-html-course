@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>     </title>
+        <script>
+        window.onload=function()
+        {
+            var result = document.getElementById('result');
+            var elements = document.getElementsByTagName('p');
+            var classNameX = document.getElementsByClassName('last');
+            result.innerHTML = elements;
+            console.log(elements);
+            console.log(classNameX);
+            
+            
+        }
+        
+        
+        </script>
+    </head>
+    
+    <body>
+        <h1>Elements, DOM, and Fun!!!</h1>
+        <p>This is a node.</p>
+        <p>This is another node.</p>
+        <p class="last">This is a Third node!</p>
+        <div id="result"></div>
+    
+    </body>
+</html>

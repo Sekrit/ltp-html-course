@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Alert Dialogs</title>
+        <script>
+            window.onload=function()
+            {
+                //alert("Welcome to Javascript!")
+                document.getElementById("myBtn").addEventListener('click', alertUser);
+            }
+            
+            function alertUser(e)
+            {
+                //alert("Button Pressed!!!")
+                alert(e.target.id + ": Is the ID of the button pressed!");
+            }
+        
+        </script>
+    
+    </head>
+    <body>
+        <button id="myBtn">Press Me</button>
+    
+    </body>
+</html>
