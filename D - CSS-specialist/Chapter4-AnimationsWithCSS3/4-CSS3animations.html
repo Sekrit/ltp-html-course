@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS3 Animation</title>
+    <style>
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            
+            -webkit-animation: colorChange 12s;
+            -webkit-animation-iteration-count: 1;
+            
+        }
+        @-webkit-keyframes colorChange {
+            from {background-color: red;}
+            to {background-color: blue;}
+            to {background-color: yellow;}
+        }
+    
+    </style>    
+</head>
+<body>
+    <p>I am animated!  I am animated!  I am animated!  I am animated!  I am animated!  </p>
+    
+</body>
+
+</html>
