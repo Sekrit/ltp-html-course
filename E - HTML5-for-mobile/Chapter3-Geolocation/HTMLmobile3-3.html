@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Mobile Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            #footer
+            {
+                position: fixed;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+            }
+        </style>
+        <!-- <script src="key.js"></script> -->
+        <script>
+        window.onload = function()
+        {
+            if(navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(onPosition, onError);
+            } else
+            {
+                alert("Location information not available");
+            }
+            
+        }
+        
+        function onPosition(position)
+        {
+            console.log(position);
+            var lat = position.coords.latitude;
+            var long= position.coords.longitude;
+           /* var key= "AIzaSyAj3QTGXwzdNw2w8kxTxDNGKapW-2MixC8"; */
+            document.getElementById('lat').innerHTML = "<strong>" + lat + "</strong>";
+             document.getElementById('long').innerHTML = "<strong>" + long + "</strong>";
+            
+            //https://www.google.com/maps/embed/v1/place?key=key&q=lat,long
+            
+            var url= "https://www.google.com/maps/embed/v1/place?key=" + key + "&q=" + lat + "," + long;
+            
+            console.log(url);
+            document.getElementById('map').src = url;
+        }
+            
+        function onError(e)
+        {
+            alert(e.message);
+        }
+        
+        </script>
+    </head>
+    <body>
+    <div data-role="page">
+
+      <div data-role="header">
+        <h1>Geolocation</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Latitidue: <span id="lat"></span></p>
+        <p>Longitude: <span id="long"></span></p>
+      
+      <iframe id="map"
+        width="100%"
+        height="300px"
+        frameborder="0" style="border:0">
+      </iframe>
+     </div>
+      <div data-role="footer" id="footer">
+        <h1>Copyright &copy;2017</h1>
+      </div>
+
+</div>
+    </body>
+</html>
