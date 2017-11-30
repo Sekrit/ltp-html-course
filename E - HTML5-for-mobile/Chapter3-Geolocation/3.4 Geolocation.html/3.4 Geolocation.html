@@ -15,7 +15,7 @@
                 width: 100%;
             }
         </style>
-       <script src="key.js"></script>
+        <script src="key2.js"></script>
         <script>
         window.onload = function()
         {
@@ -34,16 +34,14 @@
             console.log(position);
             var lat = position.coords.latitude;
             var long= position.coords.longitude;
-           /* var key= "AIzaSyAj3QTGXwzdNw2w8kxTxDNGKapW-2MixC8"; */
             document.getElementById('lat').innerHTML = "<strong>" + lat + "</strong>";
              document.getElementById('long').innerHTML = "<strong>" + long + "</strong>";
-            
-            //https://www.google.com/maps/embed/v1/place?key=key&q=lat,long
-            
-            var url= "https://www.google.com/maps/embed/v1/place?key=" + key + "&q=" + lat + "," + long;
-            
+        
+            var url= "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat + "," + long;
+            url += "&radius=1000&type=restaurant";
+            url += "&key=" + key;
             console.log(url);
-            document.getElementById('map').src = url;
+            
         }
             
         function onError(e)
@@ -64,14 +62,9 @@
         <p>Latitidue: <span id="lat"></span></p>
         <p>Longitude: <span id="long"></span></p>
       
-      <iframe id="map"
-        width="100%"
-        height="300px"
-        frameborder="0" style="border:0">
-      </iframe>
+        <div id="places"></div>
      </div>
       <div data-role="footer" id="footer">
-        <h5>Could not do restaurant challenge as the wrong html was included within the 3.4 exercise, and I am not skilled enough yet to execute without it.</h5>
         <h1>Copyright &copy;2017</h1>
       </div>
 
