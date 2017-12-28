@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <title>HTML5 Mobile Lab 4</title>
+    
+    <style>
+        #footer{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+    
+    </style> 
+</head>
+
+<body>
+    <div data-role="page" class="ui-content">
+        
+        <div data-role="header"><h1>jQuery Mobile Basics</h1>
+            
+            <div data-role="navbar">
+        <ul>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 4</a></li>
+           
+        </ul>
+    
+    
+    </div><!--Navbar-->
+        </div><!--header-->
+        
+        
+        <div data-role="main" class="ui-content">
+            <button class="ui-btn ui-corner-all">I'm a button!</button>
+            <a href="https://amazon.com" class="ui-btn ui-shadow" target="blank">I'm a link!</a>
+            
+            
+            
+            <a href="#popupWindow" data-rel="popup" class="ui-btn">Popup</a>
+            
+            
+            
+            <div id="popupWindow" data-role="popup">
+                
+                <div data-role="header" class="ui-content">
+                    <h1>Header Test</h1>
+                </div><!--popup header-->
+                <div data-role="main" class="ui-content">
+                    <p>I'm a popup test for a lab section of a course and I am just going to keep on typing things just so that I can see what it is like having content withing a popup which is long... which is extraneous... which is... well, something to potentially learn from.</p>
+                </div><!--popup main-->
+                
+            
+            
+            </div><!--Popup Div-->
+            
+            
+        </div><!--main-->
+        
+        
+        <div data-role="footer" id="footer" style="text-align: right">
+            <a href="#" class="ui-btn">About Us</a>
+            <a href="#" class="ui-btn">Contact Us</a>
+            <a href="#" class="ui-btn">Faqs</a>
+            <a href="#" class="ui-btn">Settings</a>
+        </div><!--footer-->
+        
+        
+    </div><!--page-->
+    
+</body>
+</html>

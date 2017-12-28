@@ -1,0 +1,20 @@
+/* .photo{
+    background-color: slategray;
+    width: 110px;
+    height: 110px;
+    align-content: center; 
+} */
+
+.comingSoonLogo {
+    position: relative;
+    max-height: auto;
+    max-width: 80%;
+    background-color: lightgray;
+    margin: 20% 5% 20% 11%;
+  /*   border: 2% solid black;
+    height: 100px; 
+    width: 100px;
+    align-content: center; */
+    
+    
+} 

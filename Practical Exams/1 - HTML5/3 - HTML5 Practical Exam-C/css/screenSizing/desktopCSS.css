@@ -1,0 +1,12 @@
+/* Desktop and landscape tablets */
+@import url("../00GeneralCSS.css");   
+@import url("../1topHeadingCSS.css");
+@import url("../2artBannerCSS.css");
+@import url("../3bodyContentsCSS.css");
+@import url("../4listsCSS.css");
+@import url("../5definitionTableCSS.css");
+@import url("../6CSS-Modal.css"); 
+
+html {
+    min-width: 1152px;
+}

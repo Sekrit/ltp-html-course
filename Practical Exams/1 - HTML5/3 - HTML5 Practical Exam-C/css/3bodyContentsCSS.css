@@ -1,0 +1,108 @@
+#mainBody{
+    display: flex;
+    position: relative;
+    height: 50%;
+    border: 2% solid black;
+}
+#bodyContents{
+    z-index:0;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    border: 1px solid transparent;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    width: 100%;  
+}
+#bodyContentsBox{
+    display: flex;
+    position:relative;
+    background-color: peru;
+    min-height: 250px;
+    width: 100em;
+    border: 1px solid transparent;
+    top: 450px;
+    background:linear-gradient(indigo, peru, royalblue, firebrick, royalblue,peru, indigo);
+    background-blend-mode: difference, exclusion, saturation;
+}
+#BodyContentsBoxCuttoff{
+    z-index: 0;
+    position: absolute;
+    background-color: whitesmoke;
+    min-height: 55px;
+    width: 98em;
+    border: 1px solid transparent;
+    
+    top: 700px;
+    background-blend-mode: difference, exclusion, saturation;
+}
+#BodyContentsBoxCuttoff a{
+    position: absolute;
+    
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    display: block;
+}
+#bodyLeft {
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    left: 5px;
+    margin: 1px 1px 1px 1px;   
+}
+#bodyContents > h3{
+    margin-bottom: 5px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    z-index: 1;
+}
+#bodyLeft, #bodyCenter ,#bodyRight {
+    display: flex;
+    position: absolute; 
+ /* background-color: aquamarine; */
+    
+}
+#bodyLeft, #bodyRight {
+    z-index: 1;
+    max-width: 23%;
+    min-width: 23%;
+    height: 160px;
+    height: 240px;
+    top: 3px;
+    border: 1px solid black;
+    text-align: center;
+    background-color:rgba(192,209,196,.55);
+    opacity: 50%;
+}
+
+#bodyCenter{
+    flex-flow: column;
+    z-index: 1;
+    position: relative;
+    left:35%;
+    top: 280px;
+    border: 1px solid black;
+    height: 450px;
+    width: 450px; 
+ /* max-width: 47%;
+    min-width: 47%;
+    max-height: 350px; 
+    min-height: 350px; */
+    overflow: scroll;
+    overflow: !hidden;
+    background-color:rgba(229,203,216,.65);
+    opacity: 85%;
+}
+#makeBelieve{
+    color: gold;
+    text-decoration: underline; 
+}
+
+#bodyRight{
+    display: flex;
+    flex-direction: column;
+    right: 5px;
+}

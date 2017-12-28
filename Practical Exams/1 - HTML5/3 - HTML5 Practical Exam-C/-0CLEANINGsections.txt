@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="css/0CSSindex.css">
+   
+    
+    <title>Jay Explains Hobby</title>
+    
+    <style>
+
+    </style>
+    <script>
+    
+    </script>
+</head>
+    
+<body>
+       
+
+    
+<div id="wrapper" class="clear">   
+    <div id="topHeadingCSS">
+        <div id="headingContents">
+
+            
+            <div id="leftColumn">
+               <image src="Images/ExampleLogo.png" id="logoExample" class="fade-blink"></image>
+            </div><!--End leftColumn-->
+
+
+            <div id="mainColumn">
+                <h1>HTML5 Practical Exam</h1>
+                <h2>My Hobbies</h2>
+            </div>  <!-- End mainColumn -->
+
+            
+            <div id="rightColumn">
+
+                <div id="membership">
+                    <form action="#" id="userForm">
+
+                        <label for="username"></label>
+                        <input type="text" id="username" name="username" maxlength="20" placeholder="username" />
+
+                        <label for="passwordCreation"></label>
+                        <input type="password" id="passwordCreation" name="passwordCreation" maxlength="30" placeholder="Password" />
+
+                        <label for="specialNeeds">Special Needs:</label>
+                        <select id="specialNeeds" name="impairment">
+                          <option value="ColorVision">Color Blind</option>
+                          <option value="VisuallyImpaired">Visual Impairment</option>
+                          <option value="HearingImpaired">Hearing Impaired</option>
+                        </select>
+                        <br>
+
+                    <input type="submit" value="Submit" id="memberFormButton" class="buttonResponse">
+                    </form>   
+
+                </div> <!-- End membership -->
+            </div>  <!-- End rightColumn -->      
+        </div>  <!-- End headingContents -->
+        
+        <div id="mainBodyMastArt2">
+        <div id="bodyMastArt2">
+            
+        </div><!-- End bodyMastArt -->
+    </div><!-- End mainBodyMastArt2 -->
+    </div> <!--End topHeading -->
+
+    
+    
+
+    <div id="mainBody">
+        <div id="bodyContents">
+
+             <div id="bodyContentsBox">   
+
+                <div id="bodyLeft">
+                    <h2 id="resourceLinks">Some of my favorite resources</h2>
+
+                    <ol type="1">
+                        <li><a href="https://youtube.com" target="_blank">This is where I learn the most about fabrication processes online.</a></li>
+
+                        <li><a href="https://youtube.com" target="_blank">This is where I learn the most about Technology processes online.</a></li>
+
+                        <li><a href="https://youtube.com" target="_blank">This is where I learn the most about Art processes online.</a></li>
+                    </ol>
+
+                </div><!-- bodyLeft -->
+
+                  <iframe id="bodyCenter" src="HTMLinternalRefs/originalBodyCenter.html">    
+                    </iframe><!-- bodyCenter -->
+                 
+                <div id="bodyRight">
+
+                    <h2>Words to get to know</h2>
+
+                        <table id="definitionTable"><caption>Glossary</caption><br>
+                            <tr>
+                                <th>Term</th>
+                                <th>Definition</th>
+                            </tr>
+                            <tr>
+                                <td>D.C.</td>
+                                <td>Direct Current</td>
+                            </tr>
+                            <tr>
+                                <td>A.C.</td>
+                                <td>Alternating Current</td>
+                            </tr>
+                            <tr>
+                                <td>Miter</td>
+                                <td>Angle Induced Horizontally</td>
+                            </tr>
+                            <tr>
+                                <td>Bevel</td>
+                                <td>Angle Induced Vertically</td>
+                            </tr>
+                            <tr>
+                                <td>Grit</td>
+                                <td>Measure of Courseness when using applications such as Sand-Paper</td>
+                            </tr>
+                        </table>
+
+                </div><!-- bodyRight -->
+
+            </div><!--bodyContentsBox-->  
+
+
+        <div id="BodyContentsBoxCuttoff">
+                <a href="#clickToSubscribe">Click to sign up for a chance to WIN!!!</a>
+            </div> <!--BodyContentsBoxCuttoff-->
+
+
+
+     <!-- <div class="modal" id="clickToSubscribe" class="modalProperties">
+            <div class="modal-container"class="modalProperties">
+                <form action="#" id="signUpForm" class="modalProperties"> 
+
+
+                <h2 class="modalProperties">Enter to win our random prizes, give-aways, and also stay informed about our events, promotions, and news with my newsletter.</h2>
+                    <br>
+                    <br>
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Please enter your E-mail address..." required /><br>
+
+
+
+                        <select id="gender" name="gender">
+                          <option value="ColorVision" selected>Female</option>
+                          <option value="VisuallyImpaired">Male</option>
+                          <option value="HearingImpaired">Trans</option>
+                            <option value="HearingImpaired">Other</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                    <br>
+
+
+                        <label for="FName"></label>
+                        <input type="text" id="FName" name="FName" maxlength="20" placeholder="Please enter your first name..." required /><br>
+
+                        <label for="LName"></label>
+                        <input type="text" id="LName" name="LName" maxlength="20" placeholder="Please enter your last name..." required /><br>
+
+
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" maxlength="30" placeholder="Please enter your password..." required /><br>
+
+                        <label for="passwordVerification"></label>
+                        <input type="password" id="passwordVerification" name="passwordVerification" maxlength="30" placeholder="For verification re-enter your password..." required /><br>
+
+
+                         <br>
+
+                        <input type="submit" value="Submit" class="memberFormButton" class="buttonResponse">
+                </form>
+
+
+
+                <a id="exitA" class="modalProperties" href="#">Exit</a>
+
+
+<!-- END MODAL TESTING -->
+            
+            </div><!-- "modal-container -->
+
+        </div><!-- End modal --> 
+
+        </div><!-- bodyContents -->
+    </div><!-- mainBody -->
+</div> <!-- End Wrapper -->
+
+
+</body>
+</html>

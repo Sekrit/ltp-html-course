@@ -1,0 +1,46 @@
+﻿Welcome to your HTML 5 Practical!
+
+I want you to make a webpage to tell me about your favorite hobby (hopefully something that’s not web development, 
+I have enough of that in my life) according to the following guidelines:
+
+
+
+HEAD/Layout
+- Use Foundation to put all of your content in the middle 50% of a desktop screen and 100% of a mobile device screen
+(Foundation not used during HTML5 Mobile course... Not familiar/comfortable with it, subbing jQuery)
+
+
+
+MENU BAR
+- Make a basic menu bar with internal links titled “HEADER”, “CONTENT”, “REFERENCES”, and “FORM”
+- Have those links point to the respective parts of the page outlined below 
+
+
+HEADER
+- Make a heading that says “{Your First Name} Explains {Hobby}”
+
+
+
+CONTENT
+- Write a couple paragraphs about how you discovered this hobby, how you get started with it, 
+and what you’ve been doing with it lately
+
+- Include either a picture or embedded video telling more about your hobby
+
+
+
+REFERENCES
+- Provide an ordered list of external links to your top three resources for reading about or researching your hobby
+
+- Prepare a table with columns titled “Phrase” and “Meaning” and populate it with a few bits of lingo from your hobby,
+ and their definitions
+
+
+
+SIGN UP FORM
+- Make a form (doesn’t have to actually function) to allow readers to sign up for your imaginary newsletter
+- Ask them for their first name, last name, email address, zip code, and date of birth
+- Have a non functional “Submit” button
+
+Whenever you’ve met the above requirements, push your project up to GitHub and send me a link to the repository on Slack 
+so that I can review your work. Best of luck!

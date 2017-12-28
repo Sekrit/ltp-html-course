@@ -1,0 +1,141 @@
+        #topHeadingCSS{
+            display:flex;
+            position: relative;
+            z-index: 0;
+            display: flex;
+            background-color:deepskyblue;
+            padding: .01em .01em .01em .01em;
+            text-align: center;  
+            border: 1px solid black;
+            align-content: center;
+            width: 100%;
+            height: 120px;
+        }
+         #headingContents {
+            display: inline-flex;
+            position: absolute;
+            justify-content: space-around;
+            border: 1px solid black;
+            width: 100%;
+            
+        }
+#leftColumn, #rightColumn{
+    display: flex;
+    position: absolute;
+    width: 33%;
+    border: 1px solid black;
+    height: 10em;
+    top: 1em;
+}
+        #leftColumn{
+            left: 3%;
+    
+        }
+        #logoExample{
+        display: flex;
+        position: absolute;
+        width: 12em;
+        height: 10em;
+        background-color: lightgray;
+        border: 1px solid black;
+        }
+
+        #mainColumn{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            flex-flow: column;
+            left: 0;
+            width: 33%;
+            border: 1px solid black;
+        }
+        #rightColumn{
+            right: 3%;  
+        }
+        #membership{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            right: 0%;
+            align-content: center;
+            background-color: lightgray;
+            padding: 2% 2% 2% 2%;  
+            width: 12em;
+            height: 10em;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        #userForm{
+            display: flex;
+            flex-flow: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+            right: 8.5%;
+            margin: 1% 1% 1% 1%;
+            font-size: .6em;
+            color: black;
+            width: 80%;
+            padding: 1% 1% 1% 1%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            
+        }
+        #userForm label{
+            display: flex;
+            right: 8.5%;
+            
+            
+            height: 1%;
+            width: 10%;
+            font-size: 1.5em;
+            white-space: nowrap;
+            padding: 1% 1% 1% 1%;
+            box-sizing:border-box;
+        }
+        input {
+            display: flex;
+            border: .5% solid black;
+            position: relative;
+            text-align: center;
+            right: 2.5%;
+            width: 150px;
+            height: 24px;
+            font-size: 1.5em;
+            padding: .1% .1% .1% .1%;
+            margin: .1em .1em .1em
+            .1em;
+            box-sizing: border-box;
+            
+        }
+        select {
+            display: flex;
+            position: relative;
+            text-align: center;
+            right: 2.5%;
+            width: 150px;
+            height: 2.5%;
+            font-size: 1em;
+            font-weight: bold;
+            padding: .2em .2em .2em .3em;
+            margin: 0px 0px 0px 0px;
+            bottom: 0%;
+            box-sizing:border-box;
+        }
+
+        .memberFormButton {
+            display: flex;
+            position: absolute;
+            margin: .6em .2em .2em .2em;
+            background-color:mediumvioletred;
+            height: 5em;
+            font-weight: bold;
+            color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .memberFormButton:hover{
+        display: flex;
+        position: absolute;
+        background-color: lightskyblue;
+        opacity: .4;
+        }

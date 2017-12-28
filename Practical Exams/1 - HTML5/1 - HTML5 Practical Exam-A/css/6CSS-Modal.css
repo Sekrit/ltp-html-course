@@ -1,0 +1,92 @@
+#BodyContentsBoxCuttoff a{
+    display: flex;
+    position: absolute;
+    margin-top: .7em;
+    right: 36em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: .15em .25em .15em .25em;
+    border-color: black;
+}
+#BodyContentsBoxCuttoff a:hover{
+    
+    color:whitesmoke;
+    background-color: deepskyblue;
+    border: .18em solid whitesmoke;
+    outline: .3em solid deepskyblue;
+    text-decoration: none;
+}
+
+.modal, #exitB{
+    z-index: 0;
+}
+.modal:before, #exitB{
+    z-index: 0;
+    content:"";
+    position:relative;
+ /* display:none; */ 
+    display:contents;
+    background-color: rgba(0,0,0,.5);
+    top: 300px;
+    left: 0;
+    height: 800px;
+    width: 1600px;
+}
+.modal-container, #exitB{
+    z-index: -500;
+    position: relative;
+    width: 385px;
+    max-width: 600px;
+    left: 760px;
+    top: 300px;
+    background-color: whitesmoke;
+ /* border: .25em solid black; */
+   
+    padding: 20px;
+    border-radius: 6px;
+
+    -webkit-transform: translate(-50%, -200%);
+    -ms-transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%);  
+    
+}
+.modal:target:before {
+    z-index: -5;
+    display: block;
+}
+
+.modal:target .modal-container, #exitB{
+   
+    z-index: 5;
+    top: 22%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    
+      
+ -webkit- transition: -webkit-transform 2s ease-out;
+    transition: transform 2s ease-in-out;
+}
+
+
+h2 {
+    margin: 0;
+}
+
+#signUpForm h2{
+    text-align:center;
+}
+#signUpForm input, #signUpForm select{
+    margin: .5em;
+}
+
+
+#signUpForm input{
+    width: 18em;
+    height: auto;
+    
+}
+#signUpForm select {
+    width: 18.3em;
+    height: auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Mobile Buttons</title>
+    
+    <style>
+        #footer{
+            position:fixed;
+            bottom: 0px;
+            width: 100%   
+        }
+        /*.ui-btn class below is a stylization which reflects how jQuery mobile only adds "padding" to the location/sides in which an icon will be placed...  Then the specified icon is placed reflecteed within the padded area.  The padded area is then reflected to connect the actual icon to it...  ESSENTIALLY a padding is added to create a "placeholder".  That placeholder allows the necessary spacing for the image to be placed. */
+        
+        
+        .ui-btn {
+            text-align: center;
+            padding-right: 0px;
+            padding-left: 0px;/*padding removed here to center the text*/ 
+        }
+    </style>
+</head>    
+
+<body>
+<div data-role="page">
+    
+    
+    
+    <div data-role="header">
+        <h1>Whiskey-Two-Bravo-Golf</h1>
+    </div><!--header-->
+
+
+    <div data-role="main" class="ui-content">
+        <p>jQuery Mobile Icons</p>
+        <button id="one" class="ui-btn ui-icon-search ui-btn-icon-right">Search</button>
+        <button class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Left</button>
+        <button class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Right</button>
+        <button class="ui-btn ui-icon-delete ui-btn-icon-left">Delete</button>
+        <button class="ui-btn ui-icon-back ui-btn-icon-right">Back</button>
+        <button class="ui-btn ui-icon-alert ui-btn-icon-left">Warning</button>
+        
+        
+    </div><!--main-->
+
+
+    <div data-role="footer" id="footer">
+        <h1>Ripcord Main - White Element</h1>
+    </div><!--footer-->
+
+</div><!--page-->  
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+@import url("colorStyle.css");
+@import url("font.css");
+@import url("sectionSizing.css");
+@import url("imageTreatment.css");
+
+html{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+body{
+    margin: 1% 1% 1% 1%;
+    border: 2px;
+    padding: 1px; 
+}
+#header{
+    height: 5%;
+}
+
+.mainLeft, .mainRight {
+ /*   font-size: .7em; */
+}
+.mobileHeadings,.titles {
+
+}
+.mobileHeadings {
+
+}
+p {
+    padding: 2%;
+}
+.mainLeft{
+    min-width: 13%;  
+    max-width: 14%;
+    margin: 2px 2px 2px 2px;
+}
+.mainCenter{
+    min-width: 52%;
+    max-width: 56%;
+    margin: 2px 2px 2px 2px;
+}
+.mainRight{
+    min-width: 10%;
+    max-width: 11%;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+#stayTuned{
+    font-size: 1em;
+    border: 1px solid black;
+  /*  padding: 2px 2px 2px 2px; */
+    margin: 15% 5% 20% 10%;
+}
+
+#mainLeftScroll1{
+    height: 350px;
+}
+
+#bruceHead{
+   border-top: 0px;
+}
+#bruceBody{
+
+}
+#heisenbergHead{
+    padding-top: 10px;
+}
+#heisenbergBody{
+    
+}
+
+

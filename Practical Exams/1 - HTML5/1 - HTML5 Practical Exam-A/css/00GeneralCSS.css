@@ -1,0 +1,123 @@
+html{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 0;
+    margin:0;
+   
+}
+body{
+    display: flex;
+    position: relative;
+    background-color: whitesmoke;
+    width: 100%;  
+    padding: 0;
+    margin: 0;
+    border: .2% solid black;
+     
+  }
+    #wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin: 2.5%;
+    border: 5px solid black;
+    padding: 0;
+    background-color: yellow;
+    }
+
+.clear{
+    clear: both;
+    }
+
+.buttonResponse{
+    display: flex;
+    position: absolute;
+    margin: 1% 1% 1% 1%;
+    border: .19% solid black;
+    outline: .2% solid whitesmoke;
+    outline-offset: -.435%;
+}
+.buttonResponse:hover{
+    display: flex;
+    position: absolute;
+    color: firebrick;
+    font-size: 1.15%;
+    outline: .3% solid whitesmoke;
+    outline-offset: .03%;
+    
+    transition: all ease-in-out 150ms;
+    
+}
+
+ .fade-blink {
+    display: flex;
+    position: absolute;
+    animation-name:animate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+
+@keyframes animate {
+     0% {
+    opacity: 0;
+  }
+    3% {
+    opacity: .03;
+  }
+   9% {
+    opacity: .09;  
+}
+  18% {
+    opacity: 0.18;
+  }
+    36% {
+    opacity: .36;
+  }
+    72% {
+    opacity: 0.72;
+  }
+   100% {
+    opacity: 1;  
+}
+  100% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+    95% {
+    opacity: 0.95;
+  }
+   85% {
+    opacity: .85;  
+}
+     72% {
+    opacity: 0.72;
+  }
+   65% {
+    opacity: .65;  
+}
+   50% {
+    opacity: .5;
+  }
+   40% {
+    opacity: 0.4;
+  }
+   30% {
+    opacity: .3;  
+}
+    20% {
+    opacity: 0.2;
+  }
+   10% {
+    opacity: .10;  
+}
+    0% {
+    opacity: 0;  
+} 
+}

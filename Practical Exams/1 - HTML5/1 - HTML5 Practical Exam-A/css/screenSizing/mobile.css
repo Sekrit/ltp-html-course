@@ -1,0 +1,151 @@
+/* for mobile devices */
+
+/* @media only screen (min-width: 0px) and (max-width: 480px){*/
+    
+    html{
+        padding: 0 0 0 0;
+        margin: 0;
+        border: 1px solid transparent;
+        justify-content: space-around;
+        
+    }   
+    body{
+        display: flex;
+        background-color: mediumpurple;
+        
+    } 
+    wrapper {
+        display: flex;
+    }   
+    
+ /*  #mobileWrapper{
+        display: none; */
+    }
+    
+    .modal{
+        display: flex;
+        position: relative;
+    }
+    #clickToSubscribe{
+        display: flex;
+        position: relative;
+        
+    }
+   /* #mobileTopHeadingCSS{
+        display: none; */
+    }
+    #headingContents{
+        display: flex;
+        position: relative;
+    }
+
+    #leftColumn{
+        display: block;
+    }
+    #logoExample{
+        display: block;
+    }
+
+    #mainColumn{
+        display: block;
+    }
+
+    #rightColumn{
+        display: none;
+    }
+    #membership{
+        display: none;
+    }
+    #username{
+        display: none;
+    }
+    #password{
+        display: none;
+    }
+    #specialNeeds{
+        display: none;
+    }
+    #bodyMastArt2{
+        display: none;
+    }
+    #bodyContents{
+        display: none;
+    }
+    #bodyContentsBox{
+        display: none;
+    }
+    #bodyLeft{
+        display: none;
+    }
+    #resourceLinks{
+        display: none;
+    }
+    #bodyCenter{
+        display: none;
+    }
+    #bodyRight{
+        display: none;
+    }
+    #definitionTable{
+        display: none;
+    }
+    #exitA{
+        
+    }
+    #exitB{
+        display: none;
+    }
+
+/* } */
+
+/*
+@media only screen and (max-width: 481px){
+    #MobileWrapper{
+    display: none;
+    }   
+
+#MobileWrapper{
+    
+}
+
+.mobileModal{
+    
+}
+#MobileclickToSubscribe{
+    
+}
+
+
+
+
+#mobileTopHeadingCSS
+#mobileHeadingContents
+
+#mobileLeftColumn
+#mobileLogoExample
+
+#mobileMainColumn
+
+#mobileRightColumn
+#mobileMembership
+#mobileUsername
+#mobilePassword
+#mobileSpecialNeeds
+
+
+
+#mobileBodyMastArt2
+
+#mobileBodyContents
+#mobileBodyContentsBox
+
+#mobileBodyLeft
+#mobileResourceLinks
+
+#mobileBodyCenter
+
+#mobileBodyRight
+#mobileDefinitionTable
+
+*/
+

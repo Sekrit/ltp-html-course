@@ -1,0 +1,57 @@
+html{
+
+}
+body{
+    background-color: rebeccapurple;
+}
+
+
+#header{
+    background-color: lightblue;  
+}
+
+.mainLeft {
+    background-color:bisque; 
+    opacity: 0.78;
+}
+.mainRight {
+    background-color:bisque; 
+    opacity: 0.;
+}
+.mainContent{
+
+}
+
+.mobileHeadings,.titles {
+
+}
+.mobileHeadings {
+
+}
+p {
+
+}
+
+.mainCenter{
+ background-color:lightseagreen;
+}
+
+#mainLeftScroll1{
+
+}
+    
+#bruceHead{
+    background-color: lightblue;
+}
+#bruceBody{
+    
+}
+    
+#heisenbergHead{
+    padding-top: 40px;
+}
+#heisenbergBody{
+    
+}
+
+

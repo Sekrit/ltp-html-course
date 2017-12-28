@@ -1,0 +1,78 @@
+@import url("colorStyle.css");
+@import url("font.css");
+@import url("sectionSizing.css");
+@import url("imageTreatment.css");
+
+html{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+body{
+    
+}
+.mainContent{
+    padding: .1% .1% .1% .1%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#header{
+    
+}
+
+.mainLeft, .mainRight {
+   
+
+}
+
+
+.mobileHeadings,.titles {
+        text-align: center;
+}
+.mobileHeadings {
+    text-align: center;
+}
+p {
+    
+}
+
+.mainLeft{
+    display: flex;
+    flex-direction: column;   
+}
+
+.mainCenter{
+    display: flex;
+    flex-direction: column;
+    
+}
+.mainRight{
+    display: flex;
+    flex-direction: column;
+}
+
+#stayTuned{
+
+}
+
+#mainLeftScroll1{
+    overflow: scroll;
+    display: block;
+}
+
+#bruceHead{
+
+}
+#bruceBody{
+    
+}
+
+#heisenbergHead{
+
+}
+#heisenbergBody{
+    
+}
+
+
