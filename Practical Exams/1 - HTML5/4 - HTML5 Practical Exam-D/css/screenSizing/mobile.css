@@ -1,0 +1,179 @@
+/* for mobile devices */
+
+/* @media only screen (min-width: 0px) and (max-width: 480px){*/
+    
+    html{
+        padding: 0 0 0 0;
+        margin: 0;
+        border: 1px solid transparent;    
+    }   
+
+    body{
+        display: flex;
+        background-color: mediumpurple;
+        
+    } 
+    wrapper{
+        display: flex;
+        padding: 20%;
+        align-content: center;
+        background-color: cadetblue;
+        min-width: 320px;
+    }   
+    
+ /*  #mobileWrapper{
+        display: none; */
+    }
+    
+    .modal{
+        display: flex;
+        position: relative;
+    }
+    #clickToSubscribe{
+        display: flex;
+        position: relative;
+        
+    }
+   /* #mobileTopHeadingCSS{
+        display: none; */
+    }
+    #headingContents{
+        display: flex;
+        position: relative;
+        align-content: center;
+    }
+
+    #leftColumn{
+       display: flex;
+       align-content: center;
+    }
+    #logoExample{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #mainColumn{
+        display: flex;
+    }
+
+    #rightColumn{
+        display: flex;
+    }
+    #membership{
+        display: flex;
+    }
+    #username{
+        display: flex;
+    }
+    #password{
+        display: flex;
+    }
+    #specialNeeds{
+        display: flex;
+    }
+    #bodyMastArt2{
+        display: flex;
+    }
+    #bodyContents{
+        display: flex;
+    }
+    #bodyContentsBox{
+        display: flex;
+    }
+    #bodyLeft{
+        display: flex;
+        background-color: orangered;
+    }
+    #resourceLinks{
+        display: flex;
+    }
+    #bodyCenter{
+        display: flex;
+    }
+    #bodyRight{
+        display: flex;
+    }
+    #definitionTable{
+        display: flex;
+    }
+    #exitA{
+        
+    }
+    #exitB{
+        display: none;
+    }
+    #glossaray{
+        display: none;
+}
+.mobileSpacer{
+    display: flex;
+    position: relative;
+    height: 60px;
+    background-color: transparent;
+}
+
+.glossaryLeft{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    
+}
+.glossaryRight{
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+/* } */
+
+/*
+@media only screen and (max-width: 481px){
+    #MobileWrapper{
+    display: none;
+    }   
+
+#MobileWrapper{
+    
+}
+
+.mobileModal{
+    
+}
+#MobileclickToSubscribe{
+    
+}
+
+
+
+
+#mobileTopHeadingCSS
+#mobileHeadingContents
+
+#mobileLeftColumn
+#mobileLogoExample
+
+#mobileMainColumn
+
+#mobileRightColumn
+#mobileMembership
+#mobileUsername
+#mobilePassword
+#mobileSpecialNeeds
+
+
+
+#mobileBodyMastArt2
+
+#mobileBodyContents
+#mobileBodyContentsBox
+
+#mobileBodyLeft
+#mobileResourceLinks
+
+#mobileBodyCenter
+
+#mobileBodyRight
+#mobileDefinitionTable
+
+*/
+

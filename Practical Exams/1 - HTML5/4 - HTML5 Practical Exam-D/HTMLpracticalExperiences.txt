@@ -1,0 +1,55 @@
+OKAY!!!
+
+Long overdue, and I send my most humble of apologies.  If I may, I would like to share my experience with this practical.
+I foolishly had my mind set to set up CSS sheets within folders and import them for styling for granularity.  For the most part,
+this simply spread out a mass css relay race when it came to the vast number of issues which required a painful amount of time to debug 
+(especially when reviewing as subjectively as I seem to do with my work at this point.)  
+
+
+
+
+What I learned not to do when building for responsive from this project is:
+
+1.)NEVER LOSE THE FIGHT AGAINST "SCOPE-CREEP"!!!
+2.)Avoid using set values such as px instead of percentages for dimensioning, as it may break the site.
+3.)Take caution not to use unnecessary, additional style sheets (or anything unnecessary for that matter).
+
+
+
+What I did for the first time while building:
+
+1.)Created a pulsating "logo"using animation & keyframes to adjusted the opacity of a downloaded image.
+2.)Used background settings especially coloring, gradients, and images to play with downloaded images of 
+	workers.  
+3.)Used outline to create reactive hover effect for the sign-up button.
+4.)Created my first modal in order to make a better presentation of the sign-up form.
+5.)Created an iframe to import a div for the "about me" section from another folder. 
+
+
+
+
+What I noticed that I could improve upon:
+1.)The links for the website references would be better with a hover effect.
+2.)The table of contents links would be better served as a table row outside of the overflow.
+	However, I could not find a way to do it without adding breakage at this late point.  
+	Outside of the overflow, the tabling displays well and is bordered well.  However, 
+	within the overflow, it seems to display improperly.
+
+
+
+
+I did amend the instructions slightly as I either did something somewhere else, or learned 
+from the course to do it another way:
+
+1.)Menu bar became links, I would like to ask how to make the bar (outside of overflow) trigger 
+	activity withing the iframe overflow.
+2.)Added a sign in for members.
+3.)Added an option in consideration for disabled visitors.
+4.)Content image was instead exercised as the animated logo.
+5.)HTML5 Mobile course dealt with sizing for screen (that is as far as I got so far).  
+	I have not used foundation since the summer, so it seems I will need to revisit it 
+	or learn about bootstrap, as I see doing sizing without a framework can be an unnecessary
+	headache.  But, it was a good experience to deal with.
+
+
+

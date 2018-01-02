@@ -1,0 +1,158 @@
+#topHeadingCSS{
+	background-color:deepskyblue;
+	text-align: center;  
+	align-content: center;
+	/*
+	border: 1px solid black;
+	width: 100%;
+	height: 10em;
+	padding: .01em .01em .01em .01em;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	FINAL TESTS */
+}
+#headingContents {
+	display:flex;
+	flex-wrap: nowrap; /* FINAL TESTS */
+	justify-content: space-around;
+	/*
+	width: 100%;
+	border: 1px solid black;
+	display: inline-flex;
+	position: absolute;
+	FINAL TESTS */
+}
+
+#leftColumn{
+    height: 10em;
+	width: 33%;
+	/* 
+	position: relative; 
+	top: 1em;
+	display: flex;
+	border: 1px solid black;
+	FINAL TESTS */
+}
+ #rightColumn{
+	margin-left: auto; /* FINAL TESTS */
+ }
+#leftColumn{ /* left: 3%; FINAL TESTS */}
+#logoExample{
+	width: 12em;
+	height: 10em;
+	background-color: lightgray;
+	/*
+	border: 1px solid black;
+	display: flex;
+	position: absolute;
+	FINAL TESTS */
+}
+#mainColumn{
+	width: 33%;  
+	/*
+	border: 1px solid black;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-flow: column;
+	left: 0;
+	FINAL TESTS */
+}
+#rightColumn{ /* right: 3%; FINAL TESTS */}
+#membership{
+	justify-content: center;
+	align-content: center;
+	background-color: lightgray;
+	padding: 2% 2% 2% 2%;  
+	width: 12em;
+	height: 10em;
+	box-sizing: border-box;
+	/*
+	right: 0
+	position: absolute;
+	display: flex;
+	border: 1px solid black;
+	FINAL TESTS */
+}
+#userForm{
+	justify-content: space-around;
+	font-size: .6em;
+	margin: 7%; /* FINAL TESTS */
+	/*
+	color: black;
+	width: 80%;
+	box-sizing: border-box;
+	position: absolute;
+	right: 8.5%;
+	margin: 1% 1% 1% 1%;
+	padding: 1% 1% 1% 1%;
+	border: 1px solid black;
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: column;
+	FINAL TESTS */
+}
+#userForm label{
+	right: 8.5%;
+    height: 1%;
+    width: 10%;
+    font-size: 1.5em;
+    white-space: nowrap;
+    padding: 1% 1% 1% 1%;
+    box-sizing:border-box;
+	/*
+	display: flex;
+	FINAL TESTS */
+}
+input {
+	border: .5% solid black;
+	position: relative;
+	text-align: center;
+	right: 2.5%;
+	width: 150px;
+	height: 24px;
+	font-size: 1.5em;
+	padding: .1% .1% .1% .1%;
+	margin: .1em .1em .1em .1em;
+	box-sizing: border-box;
+	/*
+	display: flex;
+	FINAL TESTS */
+}
+select {
+	position: relative;
+	text-align: center;
+	right: 2.5%;
+	width: 150px;
+	height: 2.5%;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .2em .2em .2em .3em;
+	margin: 0px 0px 0px 0px;
+	bottom: 0%;
+	box-sizing:border-box;
+	/*
+	display: flex;
+	FINAL TESTS */
+}
+.memberFormButton {
+	margin: .6em .2em .2em .2em;
+	background-color:mediumvioletred;
+	height: 5em;
+	font-weight: bold;
+	color: whitesmoke;
+	/*
+	box-sizing: border-box;
+	display: flex;
+	position: absolute;
+	FINAL TESTS */
+}
+.memberFormButton:hover{
+	background-color: lightskyblue;
+	opacity: .4;
+	/*
+	display: flex;
+	position: absolute;
+	FINAL TESTS */
+}

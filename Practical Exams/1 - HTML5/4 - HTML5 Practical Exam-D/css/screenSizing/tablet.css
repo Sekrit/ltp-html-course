@@ -1,0 +1,226 @@
+/* for tablet devices */
+    html{
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+        
+    }   
+    body{
+        display: flex;
+        position: relative;
+        margin: 0;
+     
+    } 
+    #wrapper {
+        display:flex;
+        position: relative;
+        align-content: center;
+      
+        margin: 0 0 0 0;
+        border: .5px solid transparent;
+        padding: 0 0 0 0;
+        background-color: mediumpurple;
+        
+    }
+
+     .buttonResponse{
+    margin: 0em auto 10em auto;
+    border: .19em solid black;
+    
+    outline: .2em solid whitesmoke;
+    outline-offset: -.435em;
+}
+.buttonResponse:hover{
+    color: firebrick;
+    font-size: 1.15em;
+    outline: .3em solid whitesmoke;
+    outline-offset: .03em;
+    transition: all ease-in-out 150ms;
+}
+
+ .fade-blink {
+  animation-name:animate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+/* End GeneralCSS */
+
+    #clickToSubscribe{
+        display: block;
+        
+    }
+    #topHeadingCSS{
+        position: fixed;
+        margin: .1em .1em .1em .1em;
+        padding: .1em .1em .1em .1em;
+        
+}
+    #headingContents{
+        position: fixed;
+        display: inline-flex;
+        justify-content: space-between;
+        height: 8em;
+        min-width: 50em;
+        left: 19em;
+        background-color: aliceblue;
+        
+    }
+    #leftColumn, #mainColumn{
+        display: block;
+     
+    }
+    #mainColumn{
+        display: block;
+        position: fixed;
+        text-align: center;
+        left:32em;
+        top: .2em;
+    }
+    #leftColumn{
+       
+        
+    }
+    #logoExample{
+        position: fixed;
+        display: block;
+        align-content: center;
+        top: 7em;
+        left: 35em;
+        width: 10em;
+        height: auto;
+        z-index: 10;
+    }
+
+    #mainColumn{
+        display: block;
+        
+        
+    }
+
+    #rightColumn{
+        display: none;
+    }
+    #membership{
+        display: none;
+    }
+    #username{
+        display: none;
+    }
+    #password{
+        display: none;
+    }
+    #specialNeeds{
+        display: none;
+    }
+    #bodyMastArt2{
+        display: none;
+    }
+    #bodyContents{
+        display: none;
+    }
+    #bodyContentsBox{
+        display: none;
+    }
+    #bodyLeft{
+        display: none;
+    }
+    #resourceLinks{
+        display: none;
+    }
+    #bodyCenter{
+        display: block;
+        position: fixed;
+        width: 20em;
+        height: 24em;
+        background-color: aliceblue;
+        z-index: -1;
+        top: 10.5em;
+        left: 32em;
+        
+        
+    }
+    #bodyRight{
+        display: none;
+    }
+    #definitionTable{
+        display: none;
+    }
+
+
+/* Modal */
+    .modalProperties{
+        display:none;
+    }
+    #exitA{
+        
+    }
+    #exitB{
+        display: none;
+    }
+
+    @keyframes animate {
+     0% {
+    opacity: 0;
+  }
+    3% {
+    opacity: .03;
+  }
+   9% {
+    opacity: .09;  
+}
+  18% {
+    opacity: 0.18;
+  }
+    36% {
+    opacity: .36;
+  }
+    72% {
+    opacity: 0.72;
+  }
+   100% {
+    opacity: 1;  
+}
+  100% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+    95% {
+    opacity: 0.95;
+  }
+   85% {
+    opacity: .85;  
+}
+     72% {
+    opacity: 0.72;
+  }
+   65% {
+    opacity: .65;  
+}
+   50% {
+    opacity: .5;
+  }
+   40% {
+    opacity: 0.4;
+  }
+   30% {
+    opacity: .3;  
+}
+    20% {
+    opacity: 0.2;
+  }
+   10% {
+    opacity: .10;  
+}
+    0% {
+    opacity: 0;  
+} 
+}
+      .modal{
+        display: block;
+    }
+
+/* End Modal */

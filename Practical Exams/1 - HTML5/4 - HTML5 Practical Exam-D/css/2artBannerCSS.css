@@ -1,0 +1,47 @@
+#mainBodyMastArt2{
+/*   
+	z-index: -1;
+    display: flex;
+    position: relative;
+    height: 24%;
+    width: 100%;
+FINAL TESTS */
+}
+
+#bodyMastArt2{
+    height: 10em;
+    background-position: right;
+    background-size: 50% 20%;
+    background-repeat: no-repeat;
+    background-position: right 900px top 185%;
+    background: url(../Images/mastArt/2electronicsWorkers.jpg), url(../Images/mastArt/3woodenMechanical.jpg), linear-gradient(red,yellow,firebrick,blue);
+    background-blend-mode: hard-light, exclusion;
+    /*  
+	right: -%;
+	top: 2hw; 
+	margin: 2% .2% .2% .2%;  
+	justify-content: space-between;  
+	border: 1px solid black; 
+	margin: -10px 1px 1px 1px; 
+	Jay */
+	
+	/*
+	width: 100%;
+	align-content: center;
+	display:flex;
+    position: absolute;
+    left: 0%;
+    top: 150px;
+    z-index: 0; 
+    padding: 0 0 0 0;
+	FINAL TESTS */
+}
+
+.bodyMastArtBlendImages{
+    display: inline-flex;
+    position: absolute;
+    flex-flow: row;
+    width: 50%;
+    height: 50%;
+    
+}

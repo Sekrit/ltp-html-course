@@ -1,0 +1,33 @@
+/* Desktop and landscape tablets */
+@import url("screenSizing/desktopCSS.css") screen and (min-height: 361px) and (min-width:641px) and (orientation: landscape);
+
+
+
+/* Large Tablet Size Devices */
+
+/*Buggy
+@import url("screenSizing/tablet.css") screen and (max-width:1151px) and (min-width: 321px) and (orientation: landscape);
+*/
+
+/* Medium Tablet Size Devices */
+/*@import url("tablet.css")screen and (min-width: 1024px) and (max-width: 1151px)and (orientation: landscape){ */    
+}
+/* Small Tablet Size Devices */
+/*@import url("tablet.css")screen and (min-width: 800px) and (max-width: 1023px)and (orientation: landscape){ */
+    
+
+
+}
+/* Somewhat Small Mobile Devices */
+@import url("mobile.css")screen and (max-height: 360px) and (max-width: 640px) and (min-width: 0px) /* and (orientation: landscape) */;
+/* Small Mobile Devices */
+
+/*@import url("mobile.css")screen and (min-width: 320px) and (max-width: 639px){
+    
+} */
+/* Very Small Mobile Devices */
+/* @import url("mobile.css")screen and (min-width: 0px) and (max-width: 319px){
+    
+} */
+
+

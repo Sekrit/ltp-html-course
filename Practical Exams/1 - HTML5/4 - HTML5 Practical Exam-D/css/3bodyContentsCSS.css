@@ -1,0 +1,164 @@
+#mainBody{
+ 
+ /*  
+    display: flex;
+    position: relative;
+    height: 50%;
+    border: 2% solid black;
+FINAL TESTS */
+}
+#bodyContents{
+	min-height: 475px;
+	height: 475px;
+/*    
+	z-index:0;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    border: 1px solid transparent;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    width: 100%;  
+*/
+}
+#bodyContentsBox{
+    background-color: peru;
+    background:linear-gradient(indigo, peru, royalblue, firebrick, royalblue,peru, indigo);
+    background-blend-mode: difference, exclusion, saturation;
+	display: flex;
+	flex-wrap: nowrap; /* FINAL TESTS */
+	justify-content: space-around; /* FINAL TESTS */
+	min-height: 475px; /*FINAL TESTS */
+	
+/*
+    position:relative;
+	top: 450px;
+	border: 1px solid transparent;
+	min-height: 250px;
+    width: 100em;
+FINAL TESTS */
+}
+#BodyContentsBoxCuttoff{
+	text-align: center;
+	padding: 2em;
+/*
+    background-color: whitesmoke;
+	z-index: 0;
+    position: absolute;
+    min-height: 55px;
+    width: 98em;
+    border: 1px solid transparent;  
+    top: 700px;
+	background-blend-mode: difference, exclusion, saturation;
+FINAL TESTS */
+}
+#BodyContentsBoxCuttoff a{ /* position: absolute; FINAL TESTS */}
+
+h1, h2, h3, h4, h5, h6{
+    display: block;
+}
+#bodyLeft {
+    font-size: .8em;
+    left: 5px;
+    margin: 1px 1px 1px 1px;   
+	/*
+	display: flex;
+    flex-direction: column;
+	FINAL TESTS */
+}
+#bodyContents > h3{
+    margin-bottom: 5px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    /*
+	z-index: 1;
+	FINAL TESTS */
+}
+#bodyLeft, #bodyCenter ,#bodyRight {
+/*
+    display: flex;
+    position: absolute; 
+FINAL TESTS */
+
+ /* background-color: aquamarine; JAY */
+    
+}
+#bodyLeft, #bodyRight {
+    max-width: 30%;
+    min-width: 25%;
+    height: 100%; /* FINAL TESTS */
+    top: 10px; /* FINAL TESTS */
+    border: 1px solid black;
+    text-align: center;
+    background-color:rgba(192,209,196,.55);
+    opacity: 50%;
+	position: relative /* FINAL TESTS */
+/*
+	z-index: 1;
+	height: 160px;
+FINAL TESTS */
+}
+
+#bodyCenter{
+    position: relative;
+    border: 1px solid black;
+    height: 450px;
+    width: 450px; 
+    overflow: scroll;
+    overflow: !hidden;
+    background-color:rgba(229,203,216,.65);
+    opacity: 85%;
+	top: 10px /*FINAL TESTS*/
+/*  
+	max-width: 47%;
+    min-width: 47%;
+    max-height: 350px; 
+    min-height: 350px;  
+Jay 
+
+	flex-flow: column;
+    z-index: 1;
+	left:35%;
+FINAL TESTS */
+}
+
+#bodyRight{
+    right: 5px;
+/*
+    display: flex;
+    flex-direction: column;
+FINAL TESTS */
+}
+#makeBelieve{
+	color: gold;
+	text-decoration: underline;
+}
+
+.contentsTable{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    border: 4px solid black;
+    justify-content:center;
+    width: 90%;
+}
+
+#aboutMeLINK, #opportunitiesLINK, #repeatLINK{
+    display: inline;
+    flex-flow: column;
+    position: relative;
+    align-content: center;
+    border: 2px solid black;
+    background-color: aqua;
+    
+   
+
+    justify-content: space-between;
+    
+}
+#tableOfContents{
+    display: flex;
+    position: relative;
+    left: 43.5%
+}
